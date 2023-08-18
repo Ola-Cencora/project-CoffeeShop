@@ -1,0 +1,21 @@
+@import '/src/vendor/scss/functions';
+
+@import '/src/sass/variables';
+
+@import '/src/vendor/scss/variables';
+@import '/src/vendor/scss/mixins';
+
+@import '/src/vendor/scss/card';
+@import '/src/vendor/scss/grid';
+@import '/src/vendor/scss/buttons';
+
+@import '/src/sass/typography';
+@import '/src/sass/global';
+@import '/src/sass/layout';
+@import '/src/sass/normalize';
+
+@import '/src/sass/pages/HomePage';
+@import '/src/sass/pages/ProductsPage';
+@import '/src/sass/pages/ContactPage';
+
+
