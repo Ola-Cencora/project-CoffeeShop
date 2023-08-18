@@ -1,13 +1,13 @@
-@import '/src/vendor/scss/functions';
+@import '/src/vendor/bootstrap/functions';
 
 @import '/src/sass/variables';
 
-@import '/src/vendor/scss/variables';
-@import '/src/vendor/scss/mixins';
+@import '/src/vendor/bootstrap/variables';
+@import '/src/vendor/bootstrap/mixins';
 
-@import '/src/vendor/scss/card';
-@import '/src/vendor/scss/grid';
-@import '/src/vendor/scss/buttons';
+@import '/src/vendor/bootstrap/card';
+@import '/src/vendor/bootstrap/grid';
+@import '/src/vendor/bootstrap/buttons';
 
 @import '/src/sass/typography';
 @import '/src/sass/global';
