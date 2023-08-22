@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: -1;
+  z-index: 0;
 
   &::after {
     content: "";
@@ -17,10 +17,11 @@
     height: 100%;
     width: 100%;
     opacity: 0.69;
-    z-index: -1;
+    z-index: 0;
   }
     
   .header {
+    z-index: 1;
     width: 1218px;
     display: flex;
     justify-content: space-between;
@@ -57,11 +58,16 @@
         font-weight: $font-regular;
         text-decoration: none;
         padding-right: 22px;
+
+        &.active {
+          opacity: 1;
+        }
       }
     }
   }
 
   .hero {
+    z-index: 1;
     width: 1250px;
     height: 169px;
     top: 300px;
@@ -86,18 +92,19 @@
     }
 
     .hero__line {
-        content: "";
-        width: 270px;
-        height: 6px;
-        background: $color-main;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 60px;
+      content: "";
+      width: 270px;
+      height: 6px;
+      background: $color-main;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 60px;
     }
   }
 
   .hero__discover {
+    z-index: 1;
     top: 800px;
     position: absolute;
     margin-bottom: 42px;
