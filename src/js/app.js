@@ -1,4 +1,5 @@
 import Contact from './components/Contact.js';
+import Home from './components/Home.js';
 import {select, classNames} from './settings.js';
 
 const app = {
@@ -52,6 +53,13 @@ const app = {
   
   },
 
+  initHome: function(){
+    const thisApp = this;
+
+    const homeElem = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(homeElem);
+  },
+
   initContact: function(){
     const thisApp = this;
 
@@ -63,7 +71,9 @@ const app = {
     const thisApp = this;
 
     thisApp.initPages();
+    //thisApp.initHome();
     thisApp.initContact();
+    thisApp.initHome();
   },
 };
 
