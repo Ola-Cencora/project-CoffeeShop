@@ -1,6 +1,5 @@
 import Contact from './components/Contact.js';
 import Products from './components/Products.js';
-import utils from './utils.js';
 import {select, classNames, settings} from './settings.js';
 
 const app = {
@@ -53,17 +52,13 @@ const app = {
   
   },
 
-  initProducts: function(){
+  generateProducts: function(){
     const thisApp = this;
-
-    const productsHeaderHTML = '<h2 class="page__title">products</h2>';
-    const productsHeaderDOM = utils.createDOMFromHTML(productsHeaderHTML);
-    const productsWrapper = document.querySelector(select.containerOf.products);
-    productsWrapper.appendChild(productsHeaderDOM);
 
     for (let productData in thisApp.data.products){
       new Products(thisApp.data.products[productData].id, thisApp.data.products[productData]);
     }
+
   },
 
   initData: function(){
@@ -81,7 +76,7 @@ const app = {
         //console.log('parsedResponse', parsedResponse);
         thisApp.data.products = parsedResponse;
 
-        thisApp.initProducts();
+        thisApp.generateProducts();
       });
 
   },
@@ -97,9 +92,7 @@ const app = {
     const thisApp = this;
 
     thisApp.initPages();
-    //thisApp.initHome();
     thisApp.initContact();
-    //thisApp.initProducts();
     thisApp.initData();
   },
 };
