@@ -22,7 +22,7 @@
     
   .header {
     z-index: 1;
-    width: 1218px;
+    width: 68%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,27 +66,29 @@
 
   .hero {
     z-index: 1;
-    width: 1250px;
+    width: 65%;
     height: 169px;
-    top: 300px;
+    top: 25%;
     position: absolute;
 
     .hero__title {
-      font-size: 100px;
+      font-size: 92px;
       letter-spacing: 16px;
-      line-height: 95px;
+      line-height: 30px;
       color: $color-main;
       font-weight: 700;
     }
 
-    .hero__title--1 {
+    #title1 {
+      display: block;
       text-align: left;
-      margin: 0 0 0 48px;
+      line-height: normal;
     }
 
-    .hero__title--2 {
+    #title2 {
+      display: block;
       text-align: right;
-      margin: 0;
+      line-height: normal;
     }
 
     .hero__line {
@@ -103,7 +105,7 @@
 
   .hero__discover {
     z-index: 1;
-    top: 800px;
+    top: 85%;
     position: absolute;
     margin-bottom: 42px;
     text-align: center;
@@ -160,19 +162,19 @@
       top: 30%;
 
       .hero__title {
-        font-size: 60px;
+        font-size: 100px;
         letter-spacing: 8px;
-        line-height: 75px;
-      }
-  
-      .hero__title--1 {
-        margin-left: 200px;
-      }
-    
-      .hero__title--2 {
-        margin-right: 200px;
+        line-height: 50px;
       }
 
+      #title1 {
+        text-align: center;
+      }
+
+      #title2 {
+        text-align: center;
+      }
+  
       .hero__line {
         margin-top: 44px;
       }
@@ -221,22 +223,20 @@
     }
 
     .hero {
-      width: 100%;
+      width: 70%;
 
       .hero__title {
         font-size: 70px;
         letter-spacing: 7px;
-        line-height: 85px;
+        line-height: 35px;
       }
 
-      .hero__title--1 {
+      #title1 {
         text-align: center;
-        margin: 0;
       }
 
-      .hero__title--2 {
+      #title2 {
         text-align: center;
-        margin: 0;
       }
 
       .hero__line {
@@ -285,6 +285,14 @@
         font-size: 60px;
         letter-spacing: 5px;
         line-height: 75px;
+      }
+
+      #title1 {
+        text-align: center;
+      }
+
+      #title2 {
+        text-align: center;
       }
     }
   }
