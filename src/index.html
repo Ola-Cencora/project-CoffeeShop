@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Coffee Shop EL TIGRE</title>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -23,9 +24,9 @@
             </div>
             <div class="hero">
                 <h1 id="title__dynamic" class="hero__title">
-                    <span id="title1"></span>
+                    <span id="title1">home of</span>
                     <br>
-                    <span id="title2"></span>
+                    <span id="title2">original tastes</span>
                 </h1>
                 <div class="hero__line"></div>
             </div>
@@ -42,10 +43,34 @@
                 <div class="products-wrapper container"></div>
                 <article class="about">
                     <h2 class="about__title page__title">about us</h2>
-                    <div class="about__txt">
-                        <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
-                        <p>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</p>
-                        <p>Join us!</p>
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <div class="carousel-image">
+                                <img src="\images/Images/employee-1.png" alt="employee picture">
+                            </div>
+                            <div class="carousel-description">
+                                <p class="employee-name">Elizabeth<span>Doherty</span></p>
+                                <p class="employee-txt">Experienced barista from Bahamas. She says that Venezuela has opened her eyes on coffee. "It's not about the taste", she says. "It's all about the feelings".</p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-image">
+                                <img src="\images/Images/employee-2.png" alt="employee picture">
+                            </div>
+                            <div class="carousel-description">
+                                <p class="employee-name">Max<span>Selfish</span></p>
+                                <p class="employee-txt">Max is the austrian barista with years of experience from the hotels across the whole Europe. "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!", he says.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-image">
+                                <img src="\images/Images/employee-3.png" alt="employee picture">
+                            </div>
+                            <div class="carousel-description">
+                                <p class="employee-name">Ping<span>Nihao</span></p>
+                                <p class="employee-txt">Ping is the youngest in the team. He doesn't like calling coffee a mystierious act. He says, a good coffe is like a mathematical formula. Once you figured it out, every coffee you make is a masterpiece</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -103,6 +128,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>

@@ -105,6 +105,19 @@ const app = {
     document.getElementById('title2').textContent = selectedTitle.title2;
 
   },
+
+  carouselWidget(){   
+    const carouselWrapper = document.querySelector('.main-carousel');
+
+    setTimeout(function() {
+    // eslint-disable-next-line no-undef
+      const flkty = new Flickity(carouselWrapper, {
+        cellAlign: 'left',
+        contain: true,
+      });
+      console.log(flkty);
+    }, 6000);
+  },
   
   init: function() {
     const thisApp = this;
@@ -112,6 +125,8 @@ const app = {
     thisApp.initPages();
     thisApp.initContact();
     thisApp.initData();
+    thisApp.carouselWidget();
+
   },
 };
 

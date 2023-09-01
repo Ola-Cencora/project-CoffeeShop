@@ -20,21 +20,30 @@
     top: 0;
   }
 
-  .about__txt{
-    color: $color-light;
-    font-size: 34px;
-    letter-spacing: 1px;
-    font-weight: $font-semibold;
-    font-style: italic;
-    width: 850px;
-    text-align: left;
+  .main-carousel {
 
-    p:last-child {
-      text-align: right;
-      margin-right: -50px;
+    .flickity-button {
+      display: none;
+    }
+
+    .carousel-cell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .carousel-image {
+        height: 220px;
+        width: 220px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      }
     }
   }
-    
+
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
