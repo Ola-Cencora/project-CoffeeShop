@@ -34,6 +34,7 @@ const app = {
         window.location.hash = '#/' + id;
       });
     }
+    thisApp.dynamicTitle();
   },
   
   activatePage: function(pageId){
@@ -86,6 +87,23 @@ const app = {
 
     const contactElem = document.querySelector(select.containerOf.contact);
     thisApp.contact = new Contact(contactElem);
+  },
+
+  dynamicTitle: function(){
+
+    const titles = [
+      { title1: 'home of', title2: 'original tastes' },
+      { title1: 'real venezuela,', title2: 'real coffee' },
+      { title1: 'taste', title2: 'real venezuela' }
+    ];
+
+    const titleNumber = Math.floor(Math.random() * titles.length);
+
+    const selectedTitle = titles[titleNumber];
+
+    document.getElementById('title1').textContent = selectedTitle.title1;
+    document.getElementById('title2').textContent = selectedTitle.title2;
+
   },
   
   init: function() {
