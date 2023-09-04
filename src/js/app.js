@@ -106,17 +106,17 @@ const app = {
 
   },
 
-  carouselWidget(){   
+  carouselWidget: function(){   
     const carouselWrapper = document.querySelector('.main-carousel');
 
-    setTimeout(function() {
     // eslint-disable-next-line no-undef
-      const flkty = new Flickity(carouselWrapper, {
-        cellAlign: 'left',
-        contain: true,
-      });
-      console.log(flkty);
-    }, 6000);
+    const flkty = new Flickity(carouselWrapper, {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      autoPlay: 5000,
+    });
+    console.log(flkty);
   },
   
   init: function() {
