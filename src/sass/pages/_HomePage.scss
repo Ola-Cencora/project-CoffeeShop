@@ -19,7 +19,7 @@
   }
 
   .main-carousel {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 
     .flickity-button {
@@ -33,16 +33,15 @@
       color: $color-light;
       width: 100%;
       counter-increment: gallery-cell;
-      margin-left: 200px;
 
       .carousel-image {
-        flex: 0 0 40%;
+        flex: 0 0 50%;
       }
     }
   }
 
   .main-carousel .carousel-cell .carousel-description {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
     letter-spacing: 1px;
 
     p:first-of-type {
@@ -59,22 +58,29 @@
   }    
 }
 
+@media (max-width: 1440px) {
+  .about .main-carousel {
+    width: 50%;
+
+    .carousel-description {
+      padding-left: 30px;
+    }
+  }
+}
+
 @media (min-width: 668px) and (max-width: 1024px) {
   .about .main-carousel {
     width: 70%;
 
     .carousel-cell {
-      margin-left: 280px;
-
       .carousel-description {
-        flex: 0 0 50%;
-        margin: 0 30px;
+        padding-left: 30px;
       }
     }
   }
 }
 
-@media (min-width: 376px) and (max-width: 667px) {
+@media (max-width: 667px) {
   .about {
     height: 80%;
 
@@ -82,7 +88,6 @@
       width: 70%;
 
       .carousel-cell {
-        margin-left: 280px;
         display: flex;
         flex-direction: column;
 
