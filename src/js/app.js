@@ -35,6 +35,7 @@ const app = {
       });
     }
     thisApp.dynamicTitle();
+    thisApp.carouselWidget();
   },
   
   activatePage: function(pageId){
@@ -125,7 +126,6 @@ const app = {
     thisApp.initPages();
     thisApp.initContact();
     thisApp.initData();
-    thisApp.carouselWidget();
 
   },
 };
